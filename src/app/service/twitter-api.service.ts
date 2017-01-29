@@ -8,7 +8,7 @@ export class TwitterApiService {
   searchResults: SearchResult[] = [];
 
   constructor() { }
-search(searchInput: SearchInput):TwitterApiService{
+search(searchInput: SearchInput,searchFilter: SearchFilter):TwitterApiService{
     this.searchResults = [];
     var maxItems = 15;
     var item = searchInput.item;
