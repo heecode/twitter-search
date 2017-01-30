@@ -1,11 +1,16 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import { AppComponent } from '../app/app.component';
+import { AlertModule } from 'ng2-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 describe('AppComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
+      imports: [
+        AlertModule.forRoot(),FormsModule
+      ],
       declarations: [
         AppComponent
       ],
