@@ -8,17 +8,23 @@
 </header>
   <section class="main" *ngIf="searchResults.length > 0">
     <ul class="search-list">
-      <li *ngFor="let sc of searchResults">
-        <div class="view">
+      <li draggable *ngFor="let sc of searchResults" >
+        
           {{sc.title}} - {{sc.objectLink}}
           <p>{{sc.description}}</p>
             <hr>
-        </div>
+      
       </li>
     </ul>
   </section>
-  <footer class="footer" *ngIf="searchResults.length > 0">
+ 
+  
+
+     <footer class="footer" *ngIf="searchResults.length > 0">
     <span class="todo-count"><strong>{{searchResults.length}}</strong> {{searchResults.length == 1 ? 'item' : 'items'}} </span>
-  </footer>
+  </footer>  
+  <div droppable >
+  <p>Drop selected items here</p>
+    </div>  
  </section>
 

@@ -5,6 +5,7 @@ import {SearchInput} from './model/search-input';
 import {TwitterApiService} from './service/twitter-api.service';
 import { SearchService } from './service/search-service.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
